@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SneakMax_3_new</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-nav-wrap-fixed">
+        <div class="container-nav-wrap">
+            <div class="side-nav">
+                <div class="side-nav-items">
+                    <div class="side-item-padding">
+                        <a href="#catalog" class="side-nav-item">Каталог</a>
+                    </div>
+                    <div class="side-item-padding">
+                        <a href="#about" class="side-nav-item">O нас</a>
+                    </div>
+                    <div class="side-item-padding">
+                        <a href="#selection" class="side-nav-item">Подбор товара</a>
+                    </div>
+                    <div class="side-item-padding">
+                        <a href="#team" class="side-nav-item">Наша команда</a>
+                    </div>
+                    <div class="side-item-padding">
+                        <a href="#form_instagram" class="side-nav-item">Доставка и оплата</a>
+                    </div>
+                    <div class="side-item-padding">
+                        <a href="#contacts" class="side-nav-item">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-nav-logo">SneakMax</div>
+                <div class="header-nav-items">
+                    <div>
+                        <a href="#catalog" class="header-nav-item invisible-nav-item">Каталог</a>
+                    </div>
+                    <div>
+                        <a href="#about" class="header-nav-item invisible-nav-item">O нас</a>
+                    </div>
+                    <div>
+                        <a href="#selection" class="header-nav-item invisible-nav-item">Подбор товара</a>
+                    </div>
+                    <div>
+                        <a href="#team" class="header-nav-item invisible-nav-item">Наша команда</a>
+                    </div>
+                    <div>
+                        <a href="#form_instagram" class="header-nav-item invisible-nav-item">Доставка и оплата</a>
+                    </div>
+                    <div>
+                        <a href="#contacts" class="header-nav-item invisible-nav-item">Контакты</a>
+                    </div>
+                    <div>
+                        <a href="#" class="header-nav-item invisible-nav-item">Корзина</a> <!-- ДЛЯ НОВОГО ОКНА БОЛЬШОЙ КОРЗИНЫ. поменять href-->
+                    </div>
+                    <div class="hum-menu">
+                        <div class="hum-elem_1"></div>
+                        <div class="hum-elem_2"></div>
+                        <div class="hum-elem_3"></div>
+                    </div>
+                    <div id="cardCount">
+                        <a href="#top" id="popUp-basket-send" target="">            <!--поменять href-->
+                            <img src="./picture/basket.png" alt="basket" class="header-nav-item-img-basket">
+                        </a>
+                        <button type="button" id="button-num-basket" class="header-nav-item-basket-info">0</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="wrap-color-violet">
+        <div class="container-wrap-position">
+            <div class="header-background-title">SneakMax</div>
+            <div class="header-description">
+                <div class="header-description-title">
+                    <h1>Кроссовки известных брендов с доставкой по России и СНГ</h1>
+                </div>
+                <div class="header-description-text">
+                    <h5>Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</h5>
+                </div>
+                <button type="button" class="button-page-buy">Перейти к покупкам</button>
+            </div>
+        </div>
+    </div>
+    <div id="catalog">
+        <div class="container-wrap-position">
+            <h2>Каталог</h2>
+            <div class="catalog-items">
+                <div class="catalog-filters"> 
+                    <form action="">  
+                        <div class="filters-title">                        <!-- фильтр цены -->
+                            <h3>Подбор<br>по параметрам</h3>
+                        </div> 
+                        <h6>Цена, руб</h6>
+                        <div class="price-range">
+                            <div class="price-field">
+                                <input type="number" class="price-input-min" value="1850" readonly>
+                            </div>
+                            <div class="price-separator">|</div>
+                            <div class="price-field">
+                                <input type="number" class="price-input-max" value="25768" readonly>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="slider-progress"></div>
+                        </div>
+                        <div class="range-sliders">
+                            <input type="range" class="range-min" min="1850" max="25768" value="1850" step="100">
+                            <input type="range" class="range-max" min="1850" max="25768" value="25768" step="100">
+                        </div>
+                        <h6>Пол</h6>                         <!-- кнопка выбор пол-->
+                        <div class="filter-gender-position">
+                            <input type="checkbox" class="checkbox-input" >
+                            <h6>Мужской</h6>
+                            <input type="checkbox" class="checkbox-input">
+                            <h6>Женский</h6>
+                        </div>
+                                    <!-- фильтр размер-->
+                        <h6>Размер</h6>
+                        <div class="input-size-wrap">
+                            <input type="text" class="input-size-elem" placeholder="35" readonly>
+                            <input type="text" class="input-size-elem" placeholder="36" readonly>
+                            <input type="text" class="input-size-elem" placeholder="37" readonly>
+                            <input type="text" class="input-size-elem" placeholder="38" readonly>
+                            <input type="text" class="input-size-elem" placeholder="39" readonly>
+                            <input type="text" class="input-size-elem" placeholder="40" readonly>
+                            <input type="text" class="input-size-elem" placeholder="41" readonly>
+                            <input type="text" class="input-size-elem" placeholder="42" readonly>
+                            <input type="text" class="input-size-elem" placeholder="43" readonly>
+                        </div>
+                        <button type="submit" class="button-submit">Применить</button>
+                        <button type="reset" class="button-reset">Сбросить</button>
+                    </form>
+                </div>
+                <div class="catalog-product">                   <!-- каталог кроссовки-->
+                    <div id="select-product-wrap">
+                        <div class="product">
+                            <div class="hover-effect-btn">
+                                <img src="./picture/nike_air_force_1.jpg" alt="" class="img-product-size">
+                                <div class="overlay"></div>
+                                <div class="effect-btn-wrap">
+                                    <div class="hover-btn">
+                                        <button type="button" title="Добавить в корзину">
+                                            <img src="./picture/basket.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="hover-btn">
+                                        <button type="button" title="Показать больше информации">
+                                            <img src="./picture/icon-show.png" alt="" class="icon-show-size">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Кроссовки Nike Air Force 1'07 QS</h6>
+                            <h2>18 400 ₽</h2>
+                        </div>
+                        <div class="product">
+                            <div class="hover-effect-btn">
+                                <img src="./picture/nike_air_force_black.jpg" alt="" class="img-product-size">
+                                <div class="overlay"></div>
+                                <div class="effect-btn-wrap">
+                                    <div class="hover-btn">
+                                        <button type="button" title="Добавить в корзину">
+                                            <img src="./picture/basket.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="hover-btn">
+                                        <button type="button" title="Показать больше информации">
+                                            <img src="./picture/icon-show.png" alt="" class="icon-show-size">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Кроссовки Nike Air Force Smoke Grey</h6>
+                            <h2>13 560 ₽</h2>
+                        </div>
+                        <div class="product">
+                            <div class="hover-effect-btn">
+                                <img src="./picture/nike_air_jordan_1.jpg" alt="" class="img-product-size">
+                                <div class="overlay"></div>
+                                <div class="effect-btn-wrap">
+                                    <div class="hover-btn">
+                                        <button type="button" title="Добавить в корзину">
+                                            <img src="./picture/basket.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="hover-btn">
+                                        <button type="button" title="Показать больше информации">
+                                            <img src="./picture/icon-show.png" alt="" class="icon-show-size">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Кроссовки Nike Air Jordan 1 Mid Bred</h6>
+                            <h2>11 000 ₽</h2>
+                        </div>
+                        <div class="product">
+                            <div class="hover-effect-btn">
+                                <img src="./picture/nike_air_jordan_4.jpg" alt="" class="img-product-size">
+                                <div class="overlay"></div>
+                                <div class="effect-btn-wrap">
+                                    <div class="hover-btn">
+                                        <button type="button" title="Добавить в корзину">
+                                            <img src="./picture/basket.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="hover-btn">
+                                        <button type="button" title="Показать больше информации">
+                                            <img src="./picture/icon-show.png" alt="" class="icon-show-size">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6>Кроссовки Nike Air Jordan 4 Fire Red</h6>
+                            <h2>52 000 ₽</h2>
+                        </div>
+                    </div>
+                    <div class="container-button-wrap">
+                        <button type="button" id="button-open-more">Показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="wrap-color-violet">
+        <div class="img-ellips">
+            <div>
+                <img 
+                    src="./picture/Ellipse 4.png" 
+                    alt="Ellipse" 
+                    class="img-ellips-one">
+            </div>
+            <div>
+                <img 
+                    src="./picture/Ellipse 5.png" 
+                    alt="Ellipse"  
+                    class="img-ellips-two">
+            </div>
+            <div>
+                <img 
+                    src="./picture/Ellipse 6.png" 
+                    alt="Ellipse" 
+                    class="img-ellips-three">
+            </div>
+        </div>
+        <div class="container-wrap-position" style="padding: 0;"> <!-- style_padding не убирать -->
+            <div class="about-items">
+                <div class="about-items-wrap">
+                    <div class="about-items-discraption">
+                        <div class="discraption-title">
+                            <h1>Пара слов о нас</h1>
+                        </div>
+                        <div class="discraption-text">
+                            <h5>Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через спорт мы можем менять жизни. В том числе с помощью воодушевляющих историй спортсменов. Чтобы помочь тебе подняться и двигаться вперед.</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img 
+                            src="./picture/cite.png" 
+                            alt="cite" 
+                            class="discraption-cite">
+                    </div>
+                </div>
+                <div class="about-items-img">
+                    <img src="./picture/Mask Group.png" alt="Mask Group" class="img-MaksGroup">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="selection">
+        <div class="container-wrap-position position-page">
+            <div class="slider-container">
+                <div id="slider-1" data-current-step="1" class="slider-wrap-height slider-container-step" >
+                    <h2>Мы подберем идеальную пару для вас</h2>
+                    <h6 class="selection-text">Ответьте на три вопроса, и мы вышлем каталог с самыми подходящими для вас моделями</h6>    
+                    <h3 class="slider-title-margin">Какой тип кроссовок рассматриваете?</h3>
+                    <div class="slider-one-wrap">
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                        <div class="slider-one-product">
+                            <img src="./picture/фото кроссовка.jpg" alt="фото кроссовка">
+                            <div class="input-product_name-wrap">
+                                <input type="checkbox" class="checkbox-input" name="checkbox">
+                                <h6>Кеды</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-step-elements">
+                        <h6 class="h6-color">1 из 3</h6>
+                        <button type="button" data-role-next-step-click="next.step.button" class="next-step-button">Следующий шаг</button>
+                    </div>
+                </div>
+                <div id="slider-2" data-current-step="2" class="slider-wrap-height slider-container-step content-invisible">
+                    <h2>Мы подберем идеальную пару для вас</h2>
+                    <h6 class="selection-text">Ответьте на два вопроса, и мы вышлем каталог с самыми подходящими для вас моделями</h6>  
+                    <h3 class="slider-title-margin">Какой размер вам подойдет?</h3>
+                    <div class="slider-wrap-size">
+                        <div class="input-size">
+                            <input type="checkbox" class="checkbox-input" name="checkbox">
+                            <h6>менее 36</h6>
+                        </div>
+                        <div class="input-size">
+                            <input type="checkbox" class="checkbox-input" name="checkbox">
+                            <h6>36-38</h6>
+                        </div>
+                        <div class="input-size">
+                            <input type="checkbox" class="checkbox-input" name="checkbox">
+                            <h6>39-41</h6>
+                        </div>
+                        <div class="input-size">
+                            <input type="checkbox" class="checkbox-input" name="checkbox">
+                            <h6>42-44</h6>
+                        </div>
+                        <div class="input-size">
+                            <input type="checkbox" class="checkbox-input" name="checkbox">
+                            <h6>45 и больше</h6>
+                        </div>
+                    </div>
+                    <div class="slider-size-img-wrap">
+                        <img src="./picture/sneak-one.png" alt="sneak-one" class="slider-size-img">
+                    </div>
+                    <div class="next-step-elements">
+                        <h6 class="h6-color">2 из 3</h6>
+                        <button type="button" data-role-next-step-click="next.step.button" class="next-step-button">Следующий шаг</button>
+                    </div>
+                </div>
+                <div id="slider-3" data-current-step="3" class="slider-wrap-height slider-container-step content-invisible">
+                    <div>
+                        <h6 class="selection-text">Ответьте вопрос, и мы вышлем каталог с самыми подходящими для вас моделями</h6>
+                    </div>
+                    <h3 class="slider-title-margin">Уточните какие-либо моменты</h3>
+                    <form action="">
+                    <textarea id="message" maxlength="450" placeholder="Введите сообщение" class="slider-textarea" required></textarea>
+                    <div class="next-step-elements">
+                        <h6 class="h6-color">3 из 3</h6>
+                        <button type="button" data-role-next-step-click="next.step.button"  class="next-step-button">Следующий шаг</button>
+                    </div>
+                </form>
+                </div>
+                <div id="slider-4" data-current-step="4" class="slider-wrap-height content-invisible">
+                    <h2>Ваша подборка готова</h2>
+                    <h6 class="slider-four-text">Оставьте свои контактные данные, чтобы бы мы могли отправить  подготовленный для вас каталог</h6>
+                    <div class="slider-form-item">
+                        <div class="slider-form-discrabtoin">
+                            <h1 class="slider-form-title">Получить предложение</h1>
+                            <h5>Получите подборку подходящих для вас моделей на почту</h5>
+                        </div>
+                        <form id="slider-form" class="slider-form-submit">
+                            <input id="userName" type="text" name="userName" placeholder="Ваше имя" maxlength="20" class="slider-form-style" autocomplete="on" required>
+                            <input id="userNumber" type="email" name="userNumber" placeholder="E-mail" class="slider-form-style" required>
+                            <button id="slider-btnSubmit" type="submit">Получить</button>
+                        </form>
+                        <div class="slider-form-item">
+                            <img src="./picture/iphone.png" alt="iPhone" class="slider-four-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="team" class="team wrap-color-violet">
+        <div class="container-wrap-position" style="padding-left: 15px;">
+            <h1>Наша команда</h1>
+            <div class="team-items">
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды (1).png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды (2).png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды (3).png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды (4).png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды (5).png.png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+                <div class="team-item-wrap">
+                    <img src="./picture/Член команды.png" alt="Член команды" class="team-item-img">
+                    <h1 class="item-name">Максим Золотарев</h1>
+                    <h5 class="item-position">Администратор</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="question">
+        <div class="container-wrap-position position-page">
+            <div class="container-question-wrap">
+                <h2 class="question-title">Часто задаваемые вопросы</h2>
+            </div>
+            <div class="ask-question-items">
+                <div class="question-block accordion-open">
+                    <div class="question-plus-button">
+                        <h3>Вопрос 1</h3>
+                        <div  class="button-add-list">
+                            <div class="button-toggle"></div>
+                        </div>
+                    </div>
+                    <div class="question-text">
+                        <h6 class="h6-color">А это ответ 1: в комплексе функционируют 6 детских садов с площадками, воспитателями и всякими другими людьми</h6>
+                    </div>
+                </div>
+                <div class="question-block">
+                    <div class="question-plus-button">
+                        <h3>Вопрос 2</h3>
+                        <div  class="button-add-list">
+                            <div class="button-toggle"></div>
+                        </div>
+                    </div>
+                    <div class="question-text">
+                        <h6 class="h6-color">А это ответ 1: в комплексе функционируют 6 детских садов с площадками, воспитателями и всякими другими людьми</h6>
+                    </div>
+                </div>
+                <div class="question-block">
+                    <div class="question-plus-button">
+                        <h3>Вопрос 3</h3>
+                        <div class="button-add-list">
+                            <div class="button-toggle"></div>
+                        </div>
+                    </div>
+                    <div class="question-text">
+                        <h6 class="h6-color">А это ответ 1: в комплексе функционируют 6 детских садов с площадками, воспитателями и всякими другими людьми</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <div class="container-wrap-position position-page_flex">
+            <div class="contacts-item-number">
+                <h1>Контакты</h1>
+                <div class="tooltip">
+                    <h6 class="h6-color" class="h6-color">ГЛАВНЫЙ ОФИС</h6>
+                    <div class="tooltip-hover">? 
+                        <span class="tooltip-text">Адрес и телефон для корреспонденции, инвесторов. Вопросы о доставке, качестве обслуживания и товара просьба задавать в отдел продаж.</span>
+                    </div>
+                </div>
+                <div class="contacts-numbers-margin">
+                    <a href="" class="contacts-numbers">7 800 789 89 89</a>
+                </div>
+                <div>
+                    <h3>г. Санкт-Петербург, Комсомольская, 43 к1</h3>
+                </div>
+                <div>
+                    <h6 class="h6-color">ОТДЕЛ ПРОДАЖ</h6>
+                </div>
+                <div class="contacts-numbers-margin">
+                    <a href="" class="contacts-numbers">7 800 789 89 89</a>
+                </div>
+                <div>
+                    <h3>г. Санкт-Петербург, Комсомольская, 43 к1</h3>
+                </div>
+                <div class="social-network">
+                    <a href="https://vk.com/login?u=2&to=L2luZGV4LnBocA--" class="vk" target="_blank">
+                        <img src="./picture/VK.jpg" alt="ВК">
+                    </a>
+                    <a href="" class="inst" target="_blank">
+                        <img src="./picture/Instagram.jpg" alt="ИНСТ" style="margin-left: 30px;">
+                    </a>
+                </div>
+            </div>
+            <div class="contacts-item-map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A728972d70164fd6828d9ffd2e3711b5dde016b5688d5d825804729159d0394ad&amp;width=670&amp;height=490&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+    <div id="form_instagram">
+        <div class="container-wrap-position position-page_flex" >
+            <div class="form-items">
+                <div class="form-item">
+                    <div class="form-discrabtoin">
+                        <h1 class="form-title">Есть вопросы?</h1>
+                        <h5>Заполните форму, и наш менеджер свяжется с вами</h5>
+                    </div>
+                    <form id="form" class="form-submit">
+                        <input id="userName" type="text" name="userName" placeholder="Ваше имя" maxlength="20"class="form-style"autocomplete="on" required>
+                        <input id="userNumber" type="number" name="userNumber" placeholder="+7(___) ___-____" class="form-style" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                        <button id="btnSubmit" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+            <div class="instagram-items">
+                <img src="./picture/Instagram_logo.png" alt="" class="instagram-title-img">
+                <div class="instagram-foto-wrap">
+                    <div class="row-small-right">
+                        <img src="./picture/Rectangle 37.jpg" alt="" class="img-foto-inst">
+                        <img src="./picture/Rectangle 39.jpg" alt="" class="img-foto-inst">
+                    </div>
+                    <div class="img-dog">
+                        <img src="./picture/dog.jpg" alt="dog" class="img-foto-inst">
+                    </div>
+                    <div class="row-small-left">
+                        <img src="./picture/Rectangle 40.jpg" alt="" class="img-foto-inst">
+                        <img src="./picture/Rectangle 41.jpg" alt="" class="img-foto-inst">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="wrap-color-grey">
+        <div class="container-wrap-position position-page-padding">
+            <div class="footer-nav">
+                <div class="footer-nav-logo">SneakMax</div>
+                <div class="header-nav-items adaptive">
+                    <div class="footer-adaptive-padding">
+                        <a href="#catalog" class="header-nav-item adaptive-text">Каталог</a>
+                    </div>
+                    <div class="footer-adaptive-padding">
+                        <a href="#about" class="header-nav-item adaptive-text">O нас</a>
+                    </div>
+                    <div class="footer-adaptive-padding">
+                        <a href="#selection" class="header-nav-item adaptive-text">Подбор товара</a>
+                    </div>
+                    <div class="footer-adaptive-padding">
+                        <a href="#team" class="header-nav-item adaptive-text">Наша команда</a>
+                    </div>
+                    <div class="footer-adaptive-padding">
+                        <a href="#form_instagram" class="header-nav-item adaptive-text">Доставка и оплата</a>
+                    </div>
+                    <div class="footer-adaptive-padding">
+                        <a href="#contacts" class="header-nav-item adaptive-text">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popUp-selection">
+        <div class="popUp-selection-elem">
+            <div class="popUp-selection-title">
+                <h1>Быстрая подборка в 3 шага!</h1>
+            </div>
+            <div class="popUp-selection-text">
+                <h5>Ответьте на три вопроса, и мы вышлем каталог с самыми подходящими для вас моделями</h5>
+            </div>
+            <div class="popUp-selection-btn-wrap">
+                <button 
+                    type="button" 
+                    id="btn-popup-selection-close"
+                    onclick="document.getElementById('popUp-selection').style.display='none'">
+                    отмена
+                </button>
+                <button type="button" id="btn-popup-selection-next">Перейти</button>
+            </div>
+        </div>
+    </div>
+    <div id="popUp-basket">
+        <div class="popUp-basket-elem">
+            <div id="popUp-basket-product-wrap">
+                <div class="basket-product-wrap">
+                    <img src="./picture/sneakers_basket.png" alt="" class="sneakers_basket-img">
+                    <div class="title_price-wrap">
+                        <h6>Женские кроссовки Puma Force 1 Shadow</h6>
+                        <h3>8 789 ₽</h3>
+                    </div>
+                    <div class="basket_delete-img" title="Удалить из корзины">
+                        <img src="./picture/basket_delete.png" alt="">
+                    </div>
+                </div>
+                <div class="basket-product-wrap">
+                    <img src="./picture/sneakers_basket.png" alt="" class="sneakers_basket-img">
+                    <div class="title_price-wrap">
+                        <h6>Женские кроссовки Puma Force 1 Shadow</h6>
+                        <h3>8 789 ₽</h3>
+                    </div>
+                    <div class="basket_delete-img" title="Удалить из корзины">
+                        <img src="./picture/basket_delete.png" alt="">
+                    </div>
+                </div>
+                <div class="basket-product-wrap">
+                    <img src="./picture/sneakers_basket.png" alt="" class="sneakers_basket-img">
+                    <div class="title_price-wrap">
+                        <h6>Женские кроссовки Puma Force 1 Shadow</h6>
+                        <h3>8 789 ₽</h3>
+                    </div>
+                    <div class="basket_delete-img" title="Удалить из корзины">
+                        <img src="./picture/basket_delete.png" alt="">
+                    </div>
+                </div>
+                <div class="basket-product-wrap">
+                    <img src="./picture/sneakers_basket.png" alt="" class="sneakers_basket-img">
+                    <div class="title_price-wrap">
+                        <h6>Женские кроссовки Puma Force 1 Shadow</h6>
+                        <h3>8 789 ₽</h3>
+                    </div>
+                    <div class="basket_delete-img" title="Удалить из корзины">
+                        <img src="./picture/basket_delete.png" alt="">
+                    </div>
+                </div>
+                <div class="basket-product-wrap">
+                    <img src="./picture/sneakers_basket.png" alt="" class="sneakers_basket-img">
+                    <div class="title_price-wrap">
+                        <h6>Женские кроссовки Puma Force 1 Shadow</h6>
+                        <h3>8 789 ₽</h3>
+                    </div>
+                    <div class="basket_delete-img" title="Удалить из корзины">
+                        <img src="./picture/basket_delete.png" alt="">
+                    </div>
+                </div>
+                <div class="card-null">
+                    <h6>В вашей корзине пусто</h6>
+                    <img src="./picture/card-null.png" alt="">
+                </div>
+            </div>
+            <div class="popUp-basket-border-style">
+                <div class="popUp-basket-btn_total-wrap">
+                    <div class="popUp-basket-total-wrap">
+                        <div class="total-text">Итого:</div>
+                        <div class="total-price">25 789 ₽</div>
+                    </div>
+                    <button type="button" id="btn-popup-basket-next">Перейти в корзину</button>
+                </div>
+                <div class="wrap-btn-page-buy">
+                    <button type="button" class="card-null-button-page-buy">Перейти к покупкам</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
